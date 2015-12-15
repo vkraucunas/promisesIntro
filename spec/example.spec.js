@@ -44,13 +44,6 @@ describe('Example', function () {
     });
   });
 
-  describe('#returnNum', function () {
-    xit('just returns a number', function () {
-      var resp = Example.returnNum(10);
-      expect(resp).toEqual(10);
-    })
-  })
-
   describe('#sum50', function () {
     xit('returns the number 50', function (done) {
       Example.sum50().then(function (result) {
