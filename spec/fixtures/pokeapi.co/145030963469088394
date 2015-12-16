@@ -1,0 +1,14 @@
+GET /api/v1/ability/132/
+host: pokeapi.co
+
+HTTP/1.1 200 OK
+server: nginx/1.1.19
+date: Wed, 16 Dec 2015 23:47:15 GMT
+content-type: application/json
+transfer-encoding: chunked
+connection: close
+vary: Accept
+x-frame-options: SAMEORIGIN
+cache-control: s-maxage=360, max-age=360
+
+{"created": "2013-11-03T15:05:59.715049", "description": "", "id": 132, "modified": "2013-11-03T15:05:59.715008", "name": "Friend-guard", "resource_uri": "/api/v1/ability/132/"}

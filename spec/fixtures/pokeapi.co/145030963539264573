@@ -1,0 +1,14 @@
+GET /api/v1/move/158/
+host: pokeapi.co
+
+HTTP/1.1 200 OK
+server: nginx/1.1.19
+date: Wed, 16 Dec 2015 23:47:16 GMT
+content-type: application/json
+transfer-encoding: chunked
+connection: close
+vary: Accept
+x-frame-options: SAMEORIGIN
+cache-control: s-maxage=360, max-age=360
+
+{"accuracy": 90, "category": "", "created": "2013-11-03T15:06:09.894176", "description": "Inflicts regular damage.  Has a 10% chance to make the target flinch.", "id": 158, "modified": "2013-12-24T15:24:30.576914", "name": "Hyper-fang", "power": 80, "pp": 15, "resource_uri": "/api/v1/move/158/"}

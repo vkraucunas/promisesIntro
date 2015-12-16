@@ -1,4 +1,7 @@
-var PokemonAPI = require('../src/pokemon');
+var PokemonAPI      = require('../src/pokemon'),
+    Replay          = require('Replay');
+
+Replay.fixtures = './spec/fixtures';
 
 describe('PokemonAPI', function () {  
   describe('#resourceByName', function () {
@@ -57,9 +60,9 @@ describe('PokemonAPI', function () {
 
   describe('#findPokemonSprite', function () {
     xit('returns the pokemon name and sprite image url for the given pokemon', function (done) {
-      PokemonAPI.findPokemonSprite('gyarados').then(function (sprite) {
-        expect(sprite.name).toEqual('Gyarados');
-        expect(sprite.image_url).toEqual('http://pokeapi.co/media/img/130.png');
+      PokemonAPI.findPokemonSprite('gyarados').then(function (pokemon) {
+        expect(pokemon.name).toEqual('Gyarados');
+        expect(pokemon.image_url).toEqual('http://pokeapi.co/media/img/130.png');
         done();
       });
     });
