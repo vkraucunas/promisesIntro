@@ -1,105 +1,44 @@
-# Intro - Review
+# Intro - Bluebird
 
-In this first part of the lesson we've learned about basic Promise syntax with ES6, the `.then()` and `.catch()` functions, chaining, and about how Promises can create branches of functions. There's a ton more to learn which will be covered in the next, super effective [Pokemon API](http://pokeapi.co/) section. For now, try reading through these Promise chains and guess the final result;
+Having Promises natively supported is great! But more often than not you'll be working with a library to implement Promises. Libraries come with a ton of additional functions and features and are likely faster than ES6's Promises. We're going to use the [Bluebird](http://bluebirdjs.com/docs/why-bluebird.html) Promise library which works just like ES6's Promises. In fact, using it will be a simple copy and paste job!
+
+Go to your `src/example.js` file and add the following line to the top of your file:
+
+```javascript
+var Promise = require('bluebird');
+```
+
+We're replacing the native Promise with Bluebird's Promise. Try running your tests now; everything should still pass!
+
+How do you know we're doing anything different though? Try adding the following to the bottom of your `example.js`:
+
+```javascript
+new Promise(function(resolve, reject) {
+  console.log('A promise.');
+  throw 'Boom!';
+});
+```
+
+Then run the file (e.g. `node src/example.js`) and take a look at the result. If you've required Bluebird, you should see something like:
+
+```
+A promise.
+Unhandled rejection Boom!
+```
+
+Try commenting out the require statement for Bluebird and re-running the file. That `Unhandled rejection` will disappear. A nice feature of Bluebird is that it surfaces these errors to you; ES6 Promises won't do that.
 
 * * *
 
-##### Before moving on to the next section, guess the values of the following.
+##### Before moving on to the next section, answer the following:
 
-If you'd like to check your work, including the functions you've written in a node repl and include the following function:
+1. What are some other promise libraries? Find at least 3.
+1. You can handle the above thrown error with a `.catch()`; implement this on the above example so that the error logs the following message:
+  
+  ```
+  Error during the promise chain: Boom!
+  ```
+1. Check out [Promise.method](http://bluebirdjs.com/docs/api/promise.method.html).
+  * Rewrite `simplePromise()` using `Promise.method`.
 
-```javascript
-function log (num) { console.log(num) };
-```
-
-__Problem 1__
-```javascript
-add10Promise().
-  then(reject).
-  then(add10Promise).
-  catch(function (num) {
-   return num;
-  }).
-  then(log);
-```
-
-__Problem 2__
-```javascript
-add10Promise().
-  then(add10Promise).
-  then(reject).
-  then(add10Promise).
-  then(reject).
-  then(add10Promise).
-  then(add10Promise).
-  catch(function (num) {
-   return num;
-  }).
-  then(add10Promise).
-  then(add10Promise).
-  then(log);
-```
-
-__Problem 3__
-```javascript
-add10Promise(50).
-  then(reject).
-  then(add10Promise).
-  catch(function (num) {
-   return num;
-  }).
-  then(add10Promise).
-  then(reject).
-  catch(function (num) {
-   return num;
-  }).
-  then(add10Promise).
-  then(add10Promise).
-  then(log);
-```
-
-__Problem 4__
-```javascript
-reject().
-  then(add10Promise).
-  then(reject).
-  then(add10Promise).
-  then(reject).
-  then(add10Promise).
-  then(add10Promise).
-  catch(function (num) {
-   return num;
-  }).
-  then(add10Promise).
-  then(add10Promise).
-  then(log);
-```
-
-__Problem 5__
-```javascript
-add10Promise(50).
-  then(add10Promise).
-  catch(function (num) {
-   return num;
-  }).
-  then(reject).
-  catch(function (num) {
-   return num;
-  }).
-  then(add10Promise).
-  catch(function (num) {
-   return num;
-  }).
-  then(reject).
-  then(add10Promise).
-  catch(function (num) {
-   return num;
-  }).
-  then(add10Promise).
-  catch(function (num) {
-   return num;
-  }).
-  then(add10Promise).
-  then(add10Promise).
-  then(log);
-```
+[[Continue](step-6.md)]

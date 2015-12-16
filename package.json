@@ -6,6 +6,7 @@
   "author": "Wes Reid",
   "license": "ISC",
   "dependencies": {
+    "bluebird": "^3.0.6",
     "request": "^2.67.0"
   }
 }
