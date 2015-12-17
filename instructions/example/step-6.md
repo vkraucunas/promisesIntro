@@ -103,3 +103,5 @@ add10Promise(50).
   then(add10Promise).
   then(log);
 ```
+
+[[Back](step-5.md)]

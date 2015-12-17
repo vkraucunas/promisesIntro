@@ -39,4 +39,4 @@ First, try un-commenting `reject('BAD')`. You should see that the initial Promis
   * Why does the one `.then()` statement fail?
 1. Try adding more `.then()` and `.catch()` statements until you feel comfortable understanding how each method is working.
 
-[[Continue](step-4.md)]
+[[Back](step-2.md)] - [[Continue](step-4.md)]

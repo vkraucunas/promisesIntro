@@ -17,4 +17,4 @@ We're going to create four new functions:
   * If you get an `Error: Timeout` issue, that's likely because there's no `.catch()` case. Add one so that you still return a number.
   * If you receive an error like this, great job! `Failures ... Expected 30 to equal 50.` Keep the `.then(reject)` call where it is and still get the test to pass by adding more to the chain.
 
-[[Continue](step-5.md)]
+[[Back](step-3.md)] - [[Continue](step-5.md)]

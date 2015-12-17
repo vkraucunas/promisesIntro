@@ -44,4 +44,4 @@ While we can now dynamically change the number being evaluated, it's still wrapp
   * If you're having trouble getting the `resolve()` test to pass, re-read above and look at how the test is formatted inside of `spec/example.spec.js`.
   * If you're having trouble getting the `reject()` test to pass, check out [this hint](step-1a.md) before giving up!
 
-[[Continue](step-2.md)]
+[[Back](step-0.md)] - [[Continue](step-2.md)]

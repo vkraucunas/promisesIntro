@@ -31,4 +31,4 @@ it('returns BAD when given false', function (done) {
 
 This test should pass. What does this tell you about what `reject()` does? What might you add to make sure no matter what (resolve or reject) a value gets passed to the `.then()` inside of the test?
 
-[[Return](step-1.md)]
+[[Back](step-1.md)]

@@ -41,4 +41,4 @@ Try commenting out the require statement for Bluebird and re-running the file. T
 1. Check out [Promise.method](http://bluebirdjs.com/docs/api/promise.method.html).
   * Rewrite `simplePromise()` using `Promise.method`.
 
-[[Continue](step-6.md)]
+[[Back](step-4.md)] - [[Continue](step-6.md)]
