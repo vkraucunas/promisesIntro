@@ -11,4 +11,10 @@
 * Make multiple async calls and return a single data structure, built up from the context of the other calls
 * Make parallel requests using `Promise.all`
 
+### Assumptions
+* Knowledge of npm and installing packages
+* Knowledge of basic data manipulation with Javascript
+* Knowledge of Jasmine testing
+* Prior experience with [request](https://github.com/request/request)
+
 To setup this project, simply run `npm install`. Then, follow the instructions in the `instructions` folder.
