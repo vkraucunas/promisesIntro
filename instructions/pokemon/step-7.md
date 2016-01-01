@@ -14,7 +14,7 @@ This would ideally return the Pokemon, all of the realized moves, the realized a
 
 * [Introduction to ES6 Promises](http://jamesknelson.com/grokking-es6-promises-the-four-functions-you-need-to-avoid-callback-hell/)
 * [Promises - In Wicked Detail](http://www.mattgreer.org/articles/promises-in-wicked-detail/)
-* [Promises/A+ Standard](https://promisesaplus.com/
-)
+* [Promises/A+ Standard](https://promisesaplus.com/)
+* [We have a problem with promises](http://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html)
 
 [[Back](step-6.md)]
