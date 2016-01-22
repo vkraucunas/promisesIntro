@@ -1,8 +1,8 @@
 # Pokemon API - The First Step
 
-The Pokeapi doesn't have a way to search for Pokemon by name; and, because we're not _total_ nerds, we can't recall every Pokemon by id. Let's create a function that will allow us to search for Pokemon by name.
+While we can search for Pokemon by name using the Pokemon API, we're going to search through the Pokedex end point to find our Pokemon. This will allows us to just pull back the smallest resource as a starting point. Let's create a function that will allow us to search for Pokemon by name.
 
-What's the best way to do this? We can use the [/pokedex/1](http://pokeapi.co/docs/#pokedex) resource call to return a list of all of the Pokemon. Each Pokemon comes back with their name and their respective resource uri. For example:
+We can use the [/pokedex/1](http://pokeapi.co/docs/#pokedex) resource call to return a list of all of the Pokemon. Each Pokemon comes back with their name and their respective resource uri. For example:
 
 ```javascript
 {
