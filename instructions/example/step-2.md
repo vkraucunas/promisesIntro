@@ -36,7 +36,6 @@ We are chaining onto our Promise!
 
 ##### Before moving on to the next section, answer the following:
 
-1. Why do you need the second function? Do you need the first function?
-1. If you haven't already, refactor the above code with `.catch()` -- check out [the docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch) for more information on how it works.
+1. Refactor the above code with `.catch()` -- check out [the docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch) for more information on how it works.
 
 [[Back](step-1.md)] - [[Continue](step-3.md)]
