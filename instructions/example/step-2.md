@@ -1,6 +1,18 @@
 # Intro - `.catch()`
 
-In order to get the first two tests inside of `spec/example.spec.js` to pass, you may have created a function like this one:
+In order to get the first test inside of `spec/example.spec.js` to pass, you may have created a function like this one:
+
+```javascript
+function simplePromise (bool) {
+  return new Promise(function (resolve, reject) {
+    bool ? resolve('OK') : reject('BAD');
+  }).then(function (result) {
+    return result;
+  });
+};
+```
+
+However, if we wanted to get the first _two_ tests to pass, we could do the following:
 
 ```javascript
 function simplePromise (bool) {

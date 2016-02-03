@@ -40,7 +40,7 @@ While we can now dynamically change the number being evaluated, it's still wrapp
 
 1. Change the above function so that it responds with the number if it is even and responds with `false` if it is not.
 1. Chain `.then()` onto the promise you're creating with `evenPromise()` and pass in a function that `console.log()`s out the result. You can get the `reject()` case to run by adding a second anonymous function as an argument!
-1. Take a look at the `example.spec.js` file inside of the `spec/` folder. Remove the 'x' from the first two tests that are related to `simplePromise`. Create that functionality in the accompanying `src/example.js` file and get the tests to pass!
+1. Take a look at the `example.spec.js` file inside of the `spec/` folder. Remove the 'x' from the first test related to `simplePromise`. Create that functionality in the accompanying `src/example.js` file and get the test to pass!
   * If you're having trouble getting the `resolve()` test to pass, re-read above and look at how the test is formatted inside of `spec/example.spec.js`.
 
 [[Back](step-0.md)] - [[Continue](step-2.md)]
