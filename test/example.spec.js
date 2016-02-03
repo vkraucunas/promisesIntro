@@ -1,56 +1,38 @@
-var assert  = require('assert'),
-    Example = require('../src/example');
+var chai           = require('chai'),
+    chaiAsPromised = require('chai-as-promised'),
+    should         = chai.should(),
+    Example        = require('../src/example');
 
 describe('Example', function () {  
   describe('#simplePromise', function () {
-    xit('returns OK when given true', function (done) {
-      Example.simplePromise(true).then(function (result) {
-        assert.equal(result, 'OK');
-        done();
-      });
+    xit('returns OK when given true', function () {
+      return Example.simplePromise(true).should.eventually.equal('OK');
     });
 
-    xit('returns BAD when given false', function (done) {
-      Example.simplePromise(false).then(function (result) {
-        assert.equal(result, 'BAD');
-        done();
-      });
+    xit('returns BAD when given false', function () {
+      return Example.simplePromise(false).should.eventually.equal('BAD');
     });
   });
 
   describe('#add10Promise', function () {
-    xit('adds 10 to the given number', function (done) {
-      Example.add10Promise(15).then(function (result) {
-        assert.equal(result, 25);
-        done();
-      });
+    xit('adds 10 to the given number', function () {
+      return Example.add10Promise(15).should.eventually.equal(25);
     });
 
-    xit('adds 10 to 0 when no number is given', function (done) {
-      Example.add10Promise().then(function (result) {
-        assert.equal(result, 10);
-        done();
-      });
+    xit('adds 10 to 0 when no number is given', function () {
+      return Example.add10Promise().should.eventually.equal(10);
     });
   });
 
   describe('#reject', function () {
-    xit('rejects in a promise, returning whatever was given to it', function (done) {
-      Example.
-        reject(10).
-        catch(function (result) {
-          assert.equal(result, 10);
-          done();
-        });
+    xit('rejects in a promise, returning whatever was given to it', function () {
+      return Example.reject(10).should.be.rejectedWith(10);
     });
   });
 
   describe('#sum50', function () {
-    xit('returns the number 50', function (done) {
-      Example.sum50().then(function (result) {
-        assert.equal(result, 50);
-        done();
-      });
+    xit('returns the number 50', function () {
+      return Example.sum50().should.eventually.equal(50);
     });
   });
 });
