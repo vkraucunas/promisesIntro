@@ -2,6 +2,7 @@ var chai           = require('chai'),
     chaiAsPromised = require('chai-as-promised'),
     should         = chai.should(),
     Example        = require('../src/example');
+chai.use(chaiAsPromised);
 
 describe('Example', function () {  
   describe('#simplePromise', function () {
