@@ -4,7 +4,7 @@ As you found out in the last step, we have a limited number of calls per resourc
 
 We can use [node-replay](https://github.com/assaf/node-replay) to record the responses we receive from external APIs. These responses are then stored and read back whenever we make a similar request.
 
-You'll find our recorded responses at `spec/fixtures/pokeapi.co`.
+You'll find our recorded responses at `test/fixtures/pokeapi.co`.
 
 ![Slaking - The lazy programmer of Pokemon](http://pokeapi.co/media/img/289.png)
 
