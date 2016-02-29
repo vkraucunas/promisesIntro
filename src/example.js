@@ -1,26 +1,48 @@
-// your code here
+var request = require('request');
 
-var simplePromise1 = function (boolean) {
+var simplePromise = function (boo) {
+  return new Promise(function (resolve, reject) {
+    boo ? resolve("OK") : reject("BAD");
+    }).catch(function (result) {
+      return result;
+    });
+};
+
+var add10Promise = function(num) {
+  return new Promise(function (resolve, reject) {
+    if (num > 0) {
+      num += 10;
+      resolve(num);
+    } else {
+      reject(10);
+    }
+  }).catch(function (result) {
+    return result;
+  });
+};
+
+var reject = function(value) {
     return new Promise(function (resolve, reject) {
-        if (boolean === true) {
-            resolve('OK');
-        } else {
-            reject('BAD');
+        return reject(value);
+    });
+};
+
+var sum50 = function() {
+    var num = 0;
+    return new Promise(function (resolve, reject) {
+        if (num < 50) {
+            resolve(num+50);
         }
+    }).catch(function(result) {
+        return result;
     })
 }
 
-var simplePromise = simplePromise1().then(function(value) {
-    return value;
-}, function(err) {
-    return err;
-});
 
+module.exports = {
+  simplePromise: simplePromise,
+  add10Promise: add10Promise,
+  reject: reject,
+  sum50: sum50
+};
 
-
-
-
-
-
-
-module.exports = Example.simplePromise;
