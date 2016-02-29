@@ -20,7 +20,7 @@ describe('PokemonAPI', function () {
     api = new PokemonAPI();
   });
   
-  describe('.pokemon()', function () {
+  xdescribe('.pokemon()', function () {
     it('throws an error if there is no parameter', function () {
       var expected = 'A Pokemon is required to use this method!';
       return api.pokemon().done().should.be.rejectedWith(expected);
@@ -42,7 +42,7 @@ describe('PokemonAPI', function () {
     });
   });
 
-  describe('.done()', function () {
+  xdescribe('.done()', function () {
     it('returns a promise if no callback is passed', function () {
       var pokePromise = api.pokemon('pikachu').done();
       (pokePromise.constructor).should.equal(Promise);
@@ -54,7 +54,7 @@ describe('PokemonAPI', function () {
     });
   });
 
-  describe('.abilities()', function () {
+  xdescribe('.abilities()', function () {
     it('throws an error if there is no pokemon method chained before', function () {
         var expected = 'A Pokemon is required to use this method!';
         return api.abilities().done().should.be.rejectedWith(expected);
