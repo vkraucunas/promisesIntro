@@ -1,6 +1,19 @@
 # Intro - Review
 
-In this first part of the lesson we've learned about basic Promise syntax with ES6, the `.then()` and `.catch()` functions, chaining, and about how Promises can create branches of functions. We also implemented the Bluebird library to take our Promises to the next level. There's a ton more to learn which will be covered in the next, super effective [Pokemon API](http://pokeapi.co/) section. For now, try reading through these Promise chains and guess the final result;
+In this first part of the lesson we've learned about basic Promise syntax with ES6, the `.then()` and `.catch()` functions, chaining, and about how Promises can create branches of functions. We also implemented the Bluebird library to take our Promises to the next level. 
+
+We've only skimmed the surface of what is great about Promises. If you feel ready, the super effective [Pokemon API](http://pokeapi.co/) section can give you a greater challenge. For now, take a look at the following resources and exercises to make sure you understand the basics of Promises!
+
+* * *
+
+##### Extra Resources
+
+* [Introduction to ES6 Promises](http://jamesknelson.com/grokking-es6-promises-the-four-functions-you-need-to-avoid-callback-hell/)
+* [Promises - In Wicked Detail](http://www.mattgreer.org/articles/promises-in-wicked-detail/)
+* [Promises/A+ Standard](https://promisesaplus.com/)
+* [We have a problem with promises](http://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html)
+
+[[Back](step-5.md)]
 
 * * *
 
@@ -103,5 +116,3 @@ add10Promise(50).
   then(add10Promise).
   then(log);
 ```
-
-[[Back](step-5.md)]
