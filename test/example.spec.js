@@ -4,9 +4,9 @@ var chai           = require('chai'),
     Example        = require('../src/example');
 chai.use(chaiAsPromised);
 
-describe('Example', function () {  
+describe('Example', function () {
   describe('#simplePromise', function () {
-    xit('returns OK when given true', function () {
+    it('returns OK when given true', function () {
       return Example.simplePromise(true).should.eventually.equal('OK');
     });
 
